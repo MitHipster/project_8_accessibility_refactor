@@ -12,17 +12,6 @@ body {
   background: #fffcf5;
 }
 
-/* Link Styles */
-
-a {
-  text-decoration: none;
-  color: #999;
-}
-
-a:hover {
-  color: #999;
-}
-
 /* Section Styles */
 
 .main-nav {
@@ -52,7 +41,7 @@ a:hover {
 }
 
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 5px 15px 10px 15px;
 }
 
 .nav a {
@@ -135,6 +124,19 @@ header .name{
   border-color: #96731A;
 }
 
+.button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #bdc3c7;
+  background-color: rgba(45, 43, 48, 0.9);
+  border: none;
+  transition: color .5s;
+}
+
+.button:hover {
+  color: white
+}
+
 .photo{
   display: block;
   width: 200px;
@@ -182,15 +184,16 @@ footer ul li {
 
 a.social {
   display: inline-block;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  opacity: 0.5;
-  transition: opacity .5s;
+  margin: 0 15px;
+  width: 32px;
+  height: auto;
+  opacity: 0.6;
+  transition: transform .4s, opacity .5s;
 }
 
 a.social:hover {
-  opacity: 0.8;
+  transform: scale(1.15);
+  opacity: 0.9;
 }
 
 .clearfix {
