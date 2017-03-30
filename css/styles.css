@@ -185,26 +185,14 @@ a.social {
   margin-left: 5px;
   width: 30px;
   height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
-}
-
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
+  opacity: 0.5;
+  transition: opacity .5s;
 }
 
 a.social:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
+
 .clearfix {
   clear: both;
 }
