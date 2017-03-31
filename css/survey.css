@@ -12,8 +12,21 @@ form {
 
 fieldset {
   border: none;
-  margin: 0;
+  margin: 14px 0 0;
   padding: 0;
+}
+
+legend {
+  color: #800;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #800;
+}
+
+label:not([class="radio-label"]) {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 label,
@@ -66,10 +79,6 @@ textarea:focus {
 
 .container {
   text-align: center;
-}
-.newsletter {
-  text-align: right;
-
 }
 
 

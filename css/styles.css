@@ -135,6 +135,7 @@ header .name{
   font-size: 1rem;
   padding: 10px 20px;
   color: #bdc3c7;
+  margin-top: 33px;
   background-color: rgba(45, 43, 48, 0.9);
   border: none;
   transition: color .5s;
