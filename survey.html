@@ -32,8 +32,8 @@
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="concert goers in silhouette cheer band on stage">
           <div class="container">
-            <form class = "survey" role="form">
-              <fieldset id="survey">
+            <form class="survey" role="form">
+              <fieldset>
                 <legend>Preferences:</legend>
                 <label>Who is your favorite band member:</label><br>
                 <input type="radio" id="john" name="res" value="John">
@@ -62,7 +62,8 @@
 
                 <label for="fav-song">What is your favorite song:</label>
                 <textarea id="fav-song" name="fav-song" rows="3"></textarea>
-                <button id="survey" class="button" type="submit" name="survey">Submit</button>
+                <button id="submit" class="button" type="submit" name="submit" aria-describedby="submit-btn">Submit</button>
+                <p class="descriptions" id="submit-btn">Enter and submit your choices and see how fans like you voted.</p>
               </fieldset>
             </form>
           </div>
@@ -79,10 +80,13 @@
                   <label for="fullname">Name: </label>
                   <input type="text" id="fullname" name="fullname">
                   <label for="email">Email: </label>
-                  <input type="text" id="email" name="email">
+                  <input type="email" id="email" name="email" aria-describedby="hint-email" placeholder="required" required>
+                  <p class="descriptions hints" id="hint-email">Enter a valid email address.</p>
                   <label for="retype-email">Retype Email: </label>
-                  <input type="text" id="retype-email" name="retype-email">
-                  <button id="signup" class="button" type="submit" name="signup">Sign Up</button>
+                  <input type="email" id="retype-email" name="retype-email" aria-describedby="hint-retype-email" placeholder="required" required>
+                  <p class="descriptions hints" id="hint-retype-email">Please re-enter email address.</p>
+                  <button id="signup" class="button" type="submit" name="signup" aria-describedby="signup-btn">Sign Up</button>
+                  <p class="descriptions" id="signup-btn">Provide your email and sign up to receive the band's monthly newsletter.</p>
                 </fieldset>
               </form>
             </div>

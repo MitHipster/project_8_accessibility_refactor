@@ -77,6 +77,18 @@ textarea:focus {
   background-color: #fffcf5;
 }
 
+.descriptions {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.hints {
+  text-align: right;
+  line-height: 0.9;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
 .container {
   text-align: center;
 }
