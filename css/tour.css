@@ -3,12 +3,13 @@
 .heading {
   display: inline-block;
   margin-top: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .pick {
-  width: 12px;
+  width: 16px;
   height: auto;
+  margin: 0 15px;
 }
 
 .card {
@@ -55,10 +56,6 @@ caption {
     margin-left: 30px;
     margin-right: 30px;
   }
-  
-  table {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -69,6 +66,6 @@ caption {
   }
   
   table {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
