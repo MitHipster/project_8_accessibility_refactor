@@ -4,12 +4,13 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
   color: #2b2b2b;
   background: #fffcf5;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -31,6 +32,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-around;
+  font-size: 1rem;
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
@@ -77,11 +79,12 @@ header #text {
   position: absolute;
   width: 100%;
   top: 35%;
+  padding: 0 15px;
 }
 
 header #name {
   color: #2b2b2b;
-  font-size: 5.25vmax;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -90,36 +93,19 @@ header #name {
 
 header #motto {
   color: #800;
-  font-size: 2.85vmax;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 20px 0 0;
 }
 
-.tag {
-  color: black;
-  padding: 10px;
-  letter-spacing: 5px;
-}
-
-.name{
+.name {
   font-weight: 300;
 }
 
-header .name{
-  font-size: 3em;
-}
-
-.tagline {
-  font-weight: 600;
-  padding: 20px;
-  text-transform: uppercase;
-  color: #781125
-}
-
 .card {
-  margin: 30px;
-  padding: 40px 20px;
+  margin: 60px 30px;
+  padding: 40px 30px;
   text-align: left;
   border-top: 4px solid #800;
   clear: both;
@@ -132,10 +118,10 @@ header .name{
 
 .button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 10px 20px;
   color: #d3d3d3;
-  margin-top: 33px;
+  margin-top: 25px;
   background-color: rgba(45, 43, 48, 0.9);
   border: none;
   transition: color .5s;
@@ -145,7 +131,7 @@ header .name{
   color: white
 }
 
-.photo{
+.photo {
   display: block;
   width: 200px;
   height: 0%;
@@ -153,18 +139,16 @@ header .name{
   box-shadow: 0 0 10px 0 rgba(45, 43, 48, 0.9);
 }
 
-.information{
+.information {
   width: 100%;
   text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
-.heading{
-  font-size: 2em;
+.heading {
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: #800;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 35px;
 }
 
@@ -173,11 +157,10 @@ header .name{
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 20px 40px;
 }
 
 footer .copyright {
-  top: -8px;
   font-size: .75em;
 }
 
@@ -205,12 +188,15 @@ a.social:hover {
   opacity: 0.9;
 }
 
-.clearfix {
-  clear: both;
-}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 420px) {
+  
+  .nav {
+    font-size: 1.1rem;
+  }
+  
   .nav .name {
     letter-spacing: 5px;
   }
@@ -219,56 +205,73 @@ a.social:hover {
   header #motto {
     letter-spacing: 2px;
   }
+  
+  header #name {
+    font-size: 4vmax;
+  }
+  
+  header #motto {
+    font-size: 2.5vmax;
+  }
+  
+  .card {
+    margin: 60px 40px;
+  }
+  
+  .heading {
+    font-size: 2.5vmax;
+  }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
 
   .flex {
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: flex;
-    max-width: 1200px;
-    -ms-flex-pack: distribute;
+    max-width: 1100px;
   }
 
   header {
     min-height: 470px;
   }
   
-  
-
   .nav {
-    max-width: 1200px;
+    max-width: 1100px;
+    font-size: 1.2rem;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
   }
 
   main p {
+    font-size: 1.2rem;
     line-height: 1.6em;
   }
 
-  .card{
-    margin: 40px auto;
-    padding: 20px 40px 40px;
+  .card {
+    margin: 60px auto;
+    padding: 20px 35px 40px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
   }
 
-  .photo{
-    width: 30%;
-    margin: 20px 30px;
+  .photo {
+    width: 35%;
+    margin: 20px 50px 20px 10px;
   }
 
-  .information{
+  .information {
     text-align: left;
+  }
+  
+  .heading {
+    margin-top: 10px;
   }
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 40px auto;
   }
 }
@@ -280,11 +283,12 @@ a.social:hover {
   }
   
   header #name {
-    font-size: 58px;
+    font-size: 50px;
   }
   
-  header #motto {
-    font-size: 32px;
+  header #motto,
+  .heading {
+    font-size: 30px;
   }
 }
 
