@@ -50,6 +50,7 @@ caption {
 
 
 
+/* Styles for larger screens */
 @media screen and (min-width: 420px) {
   
   .card {
