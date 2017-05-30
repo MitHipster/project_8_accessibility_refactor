@@ -127,7 +127,7 @@ header #motto {
 }
 
 .card:hover {
-  box-shadow: 0 0 70px 0 rgba(45, 43, 48, 0.25);
+  box-shadow: 0 0 20px 1px rgba(45, 43, 48, 0.2);
 }
 
 .button {
